@@ -1,14 +1,13 @@
 <template>
   <div id="app">
-    <div class="d-flex justify-content-around mx-auto">
+    <div class="d-flex justify-content-between align-items-center">
       <div class="d-flex flex-column">
         <router-link to="/" class="navbar_link"><img class="logo d-flex" src="../assets/images/Boulderbody_Logo.png"
             alt="Boulderbody Logo"></router-link>
-        <h2><router-link to="/" class="navbar_link">BoulderBody</router-link></h2>
       </div>
-      <div class="d-flex align-items-end">
-        <h2><router-link to="/about" class="navbar_link mx-2">About</router-link></h2>
-        <h2><router-link to="/workout" class="navbar_link mx-2">Workout</router-link></h2>
+      <div class="d-flex mx-3">
+        <span><router-link to="/workout" class="navbar_link mx-5">Workout</router-link></span>
+        <span><router-link to="/about" class="navbar_link mx-5">About</router-link></span>
       </div>
     </div>
   </div>
@@ -33,7 +32,9 @@ export default {
 
 <style>
 #app {
-  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .logo {
@@ -44,5 +45,13 @@ export default {
 .navbar_link {
   text-decoration: none;
   color: inherit;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 </style>

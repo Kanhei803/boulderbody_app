@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <div>
-      <NavBar />
+  <div id="app">
+    <div id="wrapper">
+      <div id="app_style" class="mx-auto m-2">
+        <NavBar />
+      </div>
     </div>
-    <h1>Home Page</h1>
+    <div id="app_style" class="mx-auto">
+      <h1>Home Page</h1>
+    </div>
   </div>
 </template>
 
@@ -26,4 +30,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+#wrapper {
+  flex: 1;
+  background-color: rgb(255, 156, 85)
+}
+
+#app_style {
+  max-width: 1300px;
+}
+</style>

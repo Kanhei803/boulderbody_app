@@ -1,10 +1,13 @@
 <template>
-  <div>
-    <div>
-      <NavBar />
+  <div id="app">
+    <div id="wrapper">
+      <div id="app_style" class="mx-auto m-2">
+        <NavBar />
+      </div>
     </div>
-    <!-- Your Vue template code here -->
-    <h1>Workout Page</h1>
+    <div id="app_style" class="mx-auto">
+      <h1>Workout Page</h1>
+    </div>
   </div>
 </template>
 
@@ -12,21 +15,28 @@
 import NavBar from '@/components/NavBar.vue';
 
 export default {
-  name: 'WorkoutPage',
+  name: 'HomePage',
   components: {
     NavBar,
   },
   data() {
     return {
-      // Your data properties here
+
     };
   },
   methods: {
-    // Your methods here
+
   },
 };
 </script>
 
-<style scoped>
-/* Your component-specific styles here */
+<style>
+#wrapper {
+  flex: 1;
+  background-color: rgb(255, 156, 85)
+}
+
+#app_style {
+  max-width: 1300px;
+}
 </style>
