@@ -6,6 +6,9 @@
 		<div>
 			<h1>About Page</h1>
 		</div>
+    <h2>Our Team:</h2>
+    <p>Kenjy</p>
+    <p>Phil</p>
 	</div>
 </template>
 
