@@ -1,42 +1,37 @@
 <template>
-  <div id="app">
-    <div id="wrapper">
-      <div id="app_style" class="mx-auto m-2">
-        <NavBar />
-      </div>
-    </div>
-    <div id="app_style" class="mx-auto">
-      <h1>About Page</h1>
-    </div>
-  </div>
+	<div id="app_style" class="d-flex flex-column justify-content-center mx-auto">
+		<div class="sticky_navbar">
+			<NavBar />
+		</div>
+		<div>
+			<h1>About Page</h1>
+		</div>
+	</div>
 </template>
 
 <script>
-import NavBar from '@/components/NavBar.vue';
+import NavBar from "@/components/NavBar.vue";
 
 export default {
-  name: 'HomePage',
-  components: {
-    NavBar,
-  },
-  data() {
-    return {
-
-    };
-  },
-  methods: {
-
-  },
+	name: "HomePage",
+	components: {
+		NavBar,
+	},
+	data() {
+		return {};
+	},
+	methods: {},
 };
 </script>
 
-<style>
-#wrapper {
-  flex: 1;
-  background-color: rgb(255, 156, 85)
-}
-
+<style scoped>
 #app_style {
-  max-width: 1300px;
+	max-width: 1300px;
+}
+.sticky_navbar {
+	position: sticky;
+	top: 0;
+	background-color: rgb(255, 156, 85);
+	z-index: 100;
 }
 </style>
